@@ -1,20 +1,34 @@
+
 body {
   background-color: aquamarine;
   background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&w=1000&q=80");
-  text-align: center;
   background-size: cover;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ 
 }
+ /* .main{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color:indigo ;
+} */
+
+
 .container {
   display: flex;
   flex-wrap:wrap; 	  
   text-align: center;	  
- 
   width: 90%;
   margin: 0 auto;
   justify-content: center;
   padding: 0.5em 0;
+  font-weight: lighter;
 }	
 
 
@@ -45,26 +59,33 @@ body {
 .specs {
   margin: 10px;
   padding: 10px;
-  
+  float: left;
+  font-size: small;
 }
 .pricing {
   margin: 10px;
   padding: 10px;
-  
+  float: right;
+  font-size: small;
 }
 
 .header {
-border: 1px solid lightblue;
+border: 1px solid #212121;
 width: 100%;
-background-color: darkgray;
+background-color: #303f9f;
+color: #C5CAE9;
 }  
 
-h4{
+h4{  
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .avail {
-background-color:darkgray;
-font-weight: bold;
+  background-color: #303f9f;
+  font-weight: bold;
+  color: #C5CAE9;
 }
 .main{
   
@@ -73,3 +94,16 @@ font-weight: bold;
 .card:hover {
   
 }
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#soldout{
+   position: absolute;
+   transition: all;
+   width: auto;
+   height: auto;
+   margin-top: 3rem;
+}
+
+
