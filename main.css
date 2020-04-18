@@ -1,45 +1,57 @@
+
 body {
   background-color: aquamarine;
   background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&w=1000&q=80");
-  text-align: center;
   background-size: cover;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ 
 }
+ /* .main{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color:indigo ;
+} */
+
+
 .container {
   display: flex;
-  flex-wrap: wrap ; 
-  text-align: center;
+  flex-wrap:wrap; 	  
+  text-align: center;	  
   width: 90%;
   margin: 0 auto;
   justify-content: center;
   padding: 0.5em 0;
-}
+  font-weight: lighter;
+}	
+
 
 
 .card {
-  /* max-width: 400px;
-  max-height: 600px; */
-  background-color: white;
-  flex-basis: 30%;
-  margin: 10px;
-  padding: 10px;
-  flex-flow: wrap;
-  overflow: auto;
+  background-color:white;
+  flex-basis: 30%;	 
+  margin: 10px;	  
+  /* padding: 10px;	   */
+  flex-flow: wrap;	  
+  overflow: auto;	  
   border-radius: 15px;
   box-shadow: 1px 1px 5px black;
   display: flex;
-  justify-content: center;
+  justify-content: center;	  
   width: 200px;
   height: 600px;
- 
+  
 }
 
 .card img {
-  width: 75px;
-  height: 75px;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 150px;
+  height: 150px;
   
   
 }
@@ -47,26 +59,51 @@ body {
 .specs {
   margin: 10px;
   padding: 10px;
-  
+  float: left;
+  font-size: small;
 }
 .pricing {
   margin: 10px;
   padding: 10px;
+  float: right;
+  font-size: small;
+}
+
+.header {
+border: 1px solid #212121;
+width: 100%;
+background-color: #303f9f;
+color: #C5CAE9;
+}  
+
+h4{  
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.avail {
+  background-color: #303f9f;
+  font-weight: bold;
+  color: #C5CAE9;
+}
+.main{
   
 }
 
-h2 .header {
-  text-align: center;
-}
-
-.avail {
-  background-color: blanchedalmond;
-}
-.main{
-  background-color: blanchedalmond;
-}
-
 .card:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 5px 15px black;
+  
 }
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#soldout{
+   position: absolute;
+   transition: all;
+   width: auto;
+   height: auto;
+   margin-top: 3rem;
+}
+
+
