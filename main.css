@@ -1,27 +1,35 @@
 body {
   background-color: aquamarine;
-
+  background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&w=1000&q=80");
   text-align: center;
+  background-size: cover;
 }
 .container {
   display: flex;
-  flex-wrap:wrap; 
+  flex-wrap: wrap ; 
   text-align: center;
-  
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0.5em 0;
 }
 
 
 .card {
-  width: 200px;
-  height: 600px;
-  display: flex;
+  /* max-width: 400px;
+  max-height: 600px; */
   background-color: white;
   flex-basis: 30%;
   margin: 10px;
   padding: 10px;
   flex-flow: wrap;
   overflow: auto;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+  display: flex;
   justify-content: center;
+  width: 200px;
+  height: 600px;
  
 }
 
@@ -39,12 +47,26 @@ body {
 .specs {
   margin: 10px;
   padding: 10px;
+  
 }
 .pricing {
   margin: 10px;
   padding: 10px;
+  
 }
 
 h2 .header {
   text-align: center;
+}
+
+.avail {
+  background-color: blanchedalmond;
+}
+.main{
+  background-color: blanchedalmond;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px black;
 }
